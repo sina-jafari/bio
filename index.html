@@ -1,70 +1,93 @@
-<!-- <!DOCTYPE html>
-<html>
-<head>
-  <title>Sina Jafari – Biography</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      color: #333;
-    }
-    h1 {
-      color: #1e90ff;
-    }
-  </style>
-</head>
-<body>
-
-  <h1>Biography</h1>
-
-  <p>
-    My name is <strong>Sina Jafari</strong> — an engineer with a deep passion for discovery, travel, and the science of light. With a background in mechanical and photonic systems, I work at the intersection of <strong>optics, photonics, and computational problem-solving</strong>. Whether I’m diving into complex electromagnetic equations or debugging a challenging piece of code, I thrive where logic meets creativity.
-  </p>
-
-  <p>
-    But my curiosity doesn’t end at the lab bench. I’ve always believed that true innovation begins where comfort ends. Inspired by the stories of Tintin from my childhood, I’ve carried that spirit into my adult life by exploring offbeat paths, remote cultures, and wild terrains. I seek places others avoid — because that's often where the most honest truths about life and nature are found.
-  </p>
-
-  <p>
-    My engineering work is focused on real-world applications of <strong>light-matter interaction</strong>, <strong>wave propagation</strong>, and <strong>advanced simulation</strong>. I also write code to model systems, analyze experimental data, and build tools that enhance both academic research and industrial innovation.
-  </p>
-
-  <p>
-    Through my site, I aim to share not just my technical journey, but the adventure behind it — the travels, the discoveries, and the pursuit of meaning in both numbers and nature.
-  </p>
-
-</body>
-</html>
- -->
-
-
-
-
-
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+  <meta charset="UTF-8">
   <title>Sina Jafari – Biography</title>
   <style>
     body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      max-width: 800px;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
       margin: 40px auto;
+      max-width: 850px;
       padding: 0 20px;
       color: #333;
+      background: #fdfdfd;
+    }
+    nav {
+      margin-bottom: 40px;
+    }
+    .navbar {
+      list-style-type: none;
+      padding: 0;
+      background-color: #007acc;
+      overflow: hidden;
+      margin: 0;
+    }
+    .navbar > li {
+      float: left;
+      position: relative;
+    }
+    .navbar > li > a {
+      display: block;
+      color: white;
+      text-align: center;
+      padding: 14px 20px;
+      text-decoration: none;
+    }
+    .navbar li a:hover, .dropdown:hover > a {
+      background-color: #005f99;
+    }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      background-color: #007acc;
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      min-width: 160px;
+      z-index: 1;
+    }
+    .dropdown-menu li a {
+      color: white;
+      padding: 12px 16px;
+      display: block;
+      text-decoration: none;
+    }
+    .dropdown:hover .dropdown-menu {
+      display: block;
     }
     h1 {
       color: #1e90ff;
+      text-align: center;
     }
   </style>
 </head>
 <body>
 
+  <!-- Navigation Bar -->
+  <nav>
+    <ul class="navbar">
+      <li><a href="/">Home</a></li>
+      <li class="dropdown">
+        <a href="#">About</a>
+        <ul class="dropdown-menu">
+          <li><a href="/bio">Biography</a></li>
+          <li><a href="/skills">Skills</a></li>
+          <li><a href="/cv">CV</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a href="#">Projects</a>
+        <ul class="dropdown-menu">
+          <li><a href="/photonics">Photonics</a></li>
+          <li><a href="/optics">Optics</a></li>
+          <li><a href="/coding">Coding</a></li>
+        </ul>
+      </li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Biography Content -->
   <h1>Biography</h1>
 
   <p>
@@ -80,7 +103,8 @@
   </p>
 
   <p>
-My curiosity has always extended beyond physical systems. I’m particularly drawn to challenges where logic, uncertainty, and precision intertwine — whether in scientific experiments or in data-driven environments. I enjoy applying programming, mathematical modeling, and problem-solving skills in ways that reveal patterns and inform high-stakes decisions. Let's say quantitative analytics as an example, and I find excitement in any field where complexity meets clarity.  </p>
+    My curiosity has always extended beyond physical systems. I’m particularly drawn to challenges where logic, uncertainty, and precision intertwine — whether in scientific experiments or in data-driven environments. I enjoy applying programming, mathematical modeling, and problem-solving skills in ways that reveal patterns and inform high-stakes decisions. Let's say quantitative analytics as an example, and I find excitement in any field where complexity meets clarity.
+  </p>
 
   <p>
     Through my site, I aim to share not just my technical journey, but the adventure behind it — the travels, the discoveries, and the pursuit of meaning in both numbers and nature.
@@ -88,4 +112,3 @@ My curiosity has always extended beyond physical systems. I’m particularly dra
 
 </body>
 </html>
-
