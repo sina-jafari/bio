@@ -1,7 +1,7 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
+  <meta charset="UTF-8" />
   <title>Sina Jafari – Biography</title>
   <style>
     body {
@@ -9,10 +9,16 @@
       line-height: 1.6;
       margin: 0;
       padding: 0;
-      background-color: #f5f5f5;
+      color: #333;
+
+      /* Full-page background image */
+      background-image: url('bg.jpg'); /* Replace with your image file name */
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-attachment: fixed;
     }
 
-    /* Navigation styles */
     nav {
       margin-bottom: 40px;
     }
@@ -20,10 +26,10 @@
     .navbar {
       display: flex;
       justify-content: center;
-      list-style-type: none;
+      background-color: #007acc;
+      list-style: none;
       padding: 0;
       margin: 0;
-      background-color: #007acc;
       overflow: visible;
     }
 
@@ -72,28 +78,17 @@
       display: block;
     }
 
-    .navbar::after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-
     h1 {
       color: #1e90ff;
       text-align: center;
     }
 
-    /* Biography container with faded background image */
     .bio-container {
       max-width: 850px;
-      margin: 0 auto;
+      margin: 40px auto;
       padding: 0 20px;
-      background-image: url('gp.jpg'); /* Replace with your own image */
-      background-size: cover;
-      background-repeat: no-repeat;
-      background-position: center;
-      background-blend-mode: lighten;
-      background-color: rgba(255, 255, 255, 0.85);
+      background-color: rgba(255, 255, 255, 0.85); /* Semi-transparent background for readability */
+      border-radius: 10px;
     }
   </style>
 </head>
@@ -126,7 +121,7 @@
     </ul>
   </nav>
 
-  <!-- Biography Section -->
+  <!-- Biography Content -->
   <div class="bio-container">
     <h1>Biography</h1>
 
